@@ -139,6 +139,7 @@ body{
     background-image: url(./images/espacio1.svg);
     background-repeat: no-repeat;
 background-position: center;
+background-size: contain;
 }
 .separacion2{
     background-image: url(./images/espacio2.svg);
@@ -394,3 +395,9 @@ body{
       width: 100%;
     }
   }
+@media screen and (max-width: 760px) {
+    .espacioR{
+        margin-top: 16vh !important;
+    }
+    
+}
