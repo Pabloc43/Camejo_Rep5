@@ -306,19 +306,15 @@ footer{
 
   figure{
       cursor: pointer;
-      position: relative;
       border-radius: 5px;
-      display: flex;
-      opacity: 1 !important;
-      overflow: hidden;
+      
 
   }
   figure img{
       width: 100%;
       height: 100%;
-      border-radius: 5px;
       opacity: 1 !important;
-          transition: 0.5s ease;
+      transition: 0.5s ease;
 
   }
 
@@ -329,20 +325,29 @@ figure .ocull{
 }
 
 figure:hover img{
+    height: 100%;
+    width: 100%;
     opacity: 0.5 !important;
     transition: 0.5s ease;
 }
 
 figure:hover .ocull{
     display: block;
-    position: absolute;
     color: #fff;
-    margin-top: 150px;
-    margin-left: 200px;
-    background-color: #0e422f;
-    border-radius: 20px;
+    background-color: #174fb6;
+    border-radius: 10px;
     transition: 0.5s ease;
 
+}
+
+.ocull{
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .wpp:hover .fab{
@@ -373,11 +378,9 @@ figure:hover .ocull{
     transition: all .3s ease;
 }
 
-/* 
-body{
-    overflow-x: hidden;
-} 
-*/
+ 
+
+
 
 .ocull p {
     animation-duration: 1.5s;
@@ -401,3 +404,36 @@ body{
     }
     
 }
+
+
+@media screen and (min-width: 992px){ 
+.titulos{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slider{
+    width: 12000px;
+    min-height: 80vh;
+    background-image: url(./images/titulos.jpg);
+    background-size: 100% 100%;
+    animation: slider 50s infinite linear;
+}
+
+@keyframes slider {
+    to{
+background-position: 12000px;
+    }
+}
+.slider:hover{
+animation-play-state: paused;
+}
+}
+
+
+body{
+    overflow-x: hidden;
+} 
+
