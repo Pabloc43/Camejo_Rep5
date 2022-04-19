@@ -398,13 +398,41 @@ figure:hover .ocull{
       width: 100%;
     }
   }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .espacioR{
         margin-top: 16vh !important;
     }
-    
+    .mobil {
+        display:flex;
+        margin-left: 20vw;
+        flex-direction:column-reverse !important;
+    }
+    .mobil h3,
+    .mobil h1{
+        text-align: center;
+    }
+    .botonesJ{
+        margin-left: 15vw;
+    }
+    .botonesJ button a{
+        width: 30vw;
+        min-width: 110px !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:992px){
+    .espacioR{
+        margin-top: 20vh !important;
+    }
+    .imagen{
+        display: none;
+    }
+
+
 }
 
+.intro p{
+    font-size: 22px;
+}
 
 @media screen and (min-width: 992px){ 
 .titulos{
@@ -433,7 +461,21 @@ animation-play-state: paused;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body{
-    overflow-x: hidden;
+    overflow-x: hhidden;
 } 
 
